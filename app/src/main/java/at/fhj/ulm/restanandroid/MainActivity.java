@@ -176,6 +176,8 @@ public class MainActivity extends AppCompatActivity {
                 tvStatus.setText("Failed! " + code);
             }
         } else if (code == 200 && result != null){
+            // NOT RECOMMENDED => only included the response field to handle the response "easy" in this class
+            // RECOMMENDED => define and set different result handler for different calls, e.g. clustered by resource
             try {
                 String resp = jsonObj.getString("response");
 
