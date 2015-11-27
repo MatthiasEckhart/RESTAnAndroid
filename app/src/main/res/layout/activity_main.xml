@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="at.fhj.ulm.restanandroid.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello REST Webservice Demo App!"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUserName"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView"
+        android:hint="insert username"
+        android:text="hugo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="insert password"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignParentStart="true"
+        android:text="test" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickRegister" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etUserName"
+        android:layout_alignParentStart="true"
+        android:hint="insert email"
+        android:text="hugo@test.at" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready."
+        android:id="@+id/tvStatus"
+        android:layout_below="@+id/btnRegister"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/etPassword"
+        android:layout_toEndOf="@+id/btnRegister"
+        android:onClick="onClickLogin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="users"
+        android:id="@+id/btnUsers"
+        android:layout_below="@+id/etPassword"
+        android:layout_toEndOf="@+id/btnLogin"
+        android:onClick="onClickUsers" />
+</RelativeLayout>
