@@ -6,3 +6,6 @@
 .DS_Store
 /build
 /captures
+
+/php/include/Config.backup.php
+/php/include/Config.php
